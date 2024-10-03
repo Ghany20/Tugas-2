@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Segitiga</title>
+</head>
+<body>
+    <h2>Menghitung Luas Segitiga</h2>
+    <p>Alas: 8 cm</p>
+    <p>Tinggi: 5 cm</p>
+    <button onclick="hitungLuasSegitiga()">Hitung Luas Segitiga</button>
+    <p id="luas-segitiga"></p>
+
+    <script>
+        function hitungLuasSegitiga() {
+            const alas = 8;
+            const tinggi = 5;
+            const luasSegitiga = 0.5 * alas * tinggi;
+            document.getElementById("luas-segitiga").innerHTML = `Luas segitiga adalah ${luasSegitiga} cm².`;
+        }
+    </script>
+</body>
+</html>
